@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 		PublishScripts\Configurations\Server-WAWS-dev.json = PublishScripts\Configurations\Server-WAWS-dev.json
 	EndProjectSection
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Client", "Client\Client.njsproj", "{936D761D-79A7-401E-9EDD-BA0ECEADEBDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{8CF55E64-FF4F-472C-A7B7-602E4A448C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF55E64-FF4F-472C-A7B7-602E4A448C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF55E64-FF4F-472C-A7B7-602E4A448C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936D761D-79A7-401E-9EDD-BA0ECEADEBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936D761D-79A7-401E-9EDD-BA0ECEADEBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936D761D-79A7-401E-9EDD-BA0ECEADEBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936D761D-79A7-401E-9EDD-BA0ECEADEBDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
