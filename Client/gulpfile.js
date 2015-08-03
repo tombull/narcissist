@@ -1,12 +1,5 @@
-/*!
- * Facebook React Starter Kit | https://github.com/kriasoft/react-starter-kit
- * Copyright (c) KriaSoft, LLC. All rights reserved. See LICENSE.txt
- */
-
 'use strict';
 
-// Include Gulp and other build automation tools and utilities
-// See: https://github.com/gulpjs/gulp/blob/master/docs/API.md
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var del = require('del');
@@ -21,7 +14,7 @@ var argv = require('minimist')(process.argv.slice(2));
 // Settings
 var DEST = './build';                         // The build output folder
 var RELEASE = !!argv.release;                 // Minimize and optimize during a build?
-var GOOGLE_ANALYTICS_ID = 'UA-XXXXX-X';       // https://www.google.com/analytics/web/
+var GOOGLE_ANALYTICS_ID = 'UA-65904194-1';       // https://www.google.com/analytics/web/
 var AUTOPREFIXER_BROWSERS = [                 // https://github.com/ai/autoprefixer
   'ie >= 10',
   'ie_mob >= 10',
@@ -193,25 +186,6 @@ gulp.task('serve', function(cb) {
   });
 });
 
-// Deploy to GitHub Pages
-gulp.task('deploy', function() {
-
-  // Remove temp folder
-  if (argv.clean) {
-    var os = require('os');
-    var path = require('path');
-    var repoPath = path.join(os.tmpdir(), 'tmpRepo');
-    $.util.log('Delete ' + $.util.colors.magenta(repoPath));
-    del.sync(repoPath, {force: true});
-  }
-
-  return gulp.src(DEST + '/**/*')
-    .pipe($.if('**/robots.txt', !argv.production ? $.replace('Disallow:', 'Disallow: /') : $.util.noop()))
-    .pipe($.ghPages({
-      remoteUrl: 'https://github.com/{name}/{name}.github.io.git',
-      branch: 'master'
-    }));
-});
 
 // Run PageSpeed Insights
 // Update `url` below to the public URL for your site

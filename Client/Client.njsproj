@@ -30,9 +30,59 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="config\preprocessor.js" />
+    <Compile Include="config\webpack.js" />
+    <Compile Include="gulpfile.js" />
     <Compile Include="server.js" />
+    <Compile Include="src\actions\RouteActions.js" />
+    <Compile Include="src\app.js" />
+    <Compile Include="src\AppDispatcher.js" />
+    <Compile Include="src\components\__tests__\Navbar-test.js" />
+    <Compile Include="src\constants\ActionTypes.js" />
+    <Compile Include="src\constants\PayloadSources.js" />
+    <Content Include=".editorconfig" />
+    <Content Include=".jshintrc" />
+    <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\assets\apple-touch-icon-precomposed.png" />
+    <Content Include="src\assets\browserconfig.xml" />
+    <Content Include="src\assets\crossdomain.xml" />
+    <Content Include="src\assets\favicon.ico" />
+    <Content Include="src\assets\humans.txt" />
+    <Content Include="src\assets\robots.txt" />
+    <Content Include="src\assets\tile-wide.png" />
+    <Content Include="src\assets\tile.png" />
+    <Content Include="src\components\Link.jsx" />
+    <Content Include="src\components\Navbar.jsx" />
+    <Content Include="src\images\logo-small%402x.png" />
+    <Content Include="src\images\logo-small.png" />
+    <Content Include="src\layouts\DefaultLayout.jsx" />
+    <Content Include="src\pages\404.html" />
+    <Content Include="src\pages\index.jsx" />
+    <Content Include="src\pages\Privacy.jsx" />
+    <Content Include="src\pages\_template.html" />
+    <Content Include="src\styles\.csscomb.json" />
+    <Content Include="src\styles\.csslintrc" />
+    <Content Include="src\styles\bootstrap.less" />
+    <Content Include="src\styles\jumbotron.less" />
+    <Content Include="src\styles\mixins.less" />
+    <Content Include="src\styles\navbar.less" />
+    <Content Include="src\styles\utilities.less" />
+    <Content Include="src\styles\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="src\" />
+    <Folder Include="src\actions\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\__tests__\" />
+    <Folder Include="src\constants\" />
+    <Folder Include="src\images\" />
+    <Folder Include="src\layouts\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\styles\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
